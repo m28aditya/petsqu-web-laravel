@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+root {
+  --fonfam: 'Akaya Kanadaka', cursive;
+  --basecol: #b5374d;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-my {
+  background-color: #b5374d;
+  color: #fff;
+}
+
+.btn-my:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  color: white;
+}
+
+@media (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  color: #b5374d;
+  scroll-behavior: smooth;
+}
+
+.navbar-light {
+  z-index: 99999;
+  background-color: white;
+}
+
+.navbar-light .logo {
+  color: #b5374d;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-family: 'Akaya Kanadaka', cursive;
+}
+
+.navbar-light .navbar-nav .badge {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #a0809b;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: var(--basecol) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  border-bottom: 1px solid #b5374d;
+}
+
+.navbar-light .navbar-nav .nav-link i {
+  border-radius: 50%;
+  font-size: 3vh;
+}
+
+.navbar-light .navbar-nav .nav-link i.active {
+  color: var(--basecol);
+}
+
+.navbar-light .navbar-nav .dropdown-user a {
+  color: gray;
+}
+
+.navbar-light .navbar-nav .dropdown-user .dropdown-menu {
+  background-color: whitesmoke;
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .dropdown-user .dropdown-menu .dropdown-item {
+  color: black;
+}
+
+.navbar-light .navbar-nav .dropdown-user .dropdown-menu .dropdown-item:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .dropdown-menu {
+  background-color: var(--basecol);
+}
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item {
+  color: white;
+}
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: var(--basecol);
+}
+
+.breadcrumb {
+  background-color: white;
+  border-bottom-right-radius: 30px;
+  border-bottom: 1px solid gray;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #b5374d;
+}
+
+footer {
+  background-color: white;
+}
+
+.wrapper-dashboard {
+  overflow-y: hidden;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../images/header2.jpg");
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../images/header2.jpg");
+  background-size: cover;
+}
+
+.wrapper-dashboard header {
+  padding-top: 20vh;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.wrapper-dashboard header h1 {
+  font-family: var(--fonfam);
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-size: 70px;
+  text-shadow: 3px 5px #fff !important;
+}
+
+.wrapper-dashboard header .brand {
+  margin-top: 50px;
+  font-size: 50px;
+  color: var(--basecol);
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-shadow: 3px 5px #fff !important;
+}
+
+.wrapper-dashboard header .title {
+  padding-top: 1vh;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--basecol);
+  text-shadow: 1px 1px #fff !important;
+}
+
+.wrapper-dashboard header .btn-get-started {
+  margin-top: 50px;
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 4px !important;
+  color: white;
+  font-weight: 500;
+}
+
+.wrapper-dashboard header .btn-get-started:hover {
+  background-color: white;
+  color: var(--basecol);
+}
+
+.wrapper-index {
+  margin-top: 13vh;
+  background-color: white;
+}
+
+.wrapper-index .jumbotron {
+  background-image: linear-gradient(250deg, black, rgba(0, 0, 0, 0)), url("../images/header3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.wrapper-index .dog-food {
+  border-radius: 50px;
+  margin-top: -15vh;
+  padding-top: 2vh;
+  background-color: whitesmoke;
+}
+
+.wrapper-index .dog-food .card {
+  border-bottom-right-radius: 50px;
+}
+
+.wrapper-index .dog-food .card:hover {
+  -webkit-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-index .dog-food h1 {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1vh 0 0 0;
+}
+
+.wrapper-index .cat-food {
+  border-radius: 50px;
+  margin-top: 5vh;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  background-color: whitesmoke;
+}
+
+.wrapper-index .cat-food .card {
+  border-bottom-right-radius: 50px;
+}
+
+.wrapper-index .cat-food .card:hover {
+  -webkit-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-index .cat-food h1 {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1vh 0 0 0;
+}
+
+.wrapper-product_details {
+  margin-top: 14vh;
+  background-color: whitesmoke;
+}
+
+.wrapper-product_details .card {
+  border-radius: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.wrapper-product_details .card .card-body {
+  height: 65vh;
+  overflow-y: scroll;
+}
+
+.wrapper-product_details .card .carousel-control-prev-icon, .wrapper-product_details .card .carousel-control-next-icon {
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.wrapper-cart {
+  margin-top: 15vh;
+}
+
+.wrapper-cart .checkout-information h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapper-cart .checkout-information p.text-muted {
+  color: #b5374d !important;
+  font-size: 15px;
+}
+
+.wrapper-cart .checkout-information table tr th {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.wrapper-cart .checkout-information table tr td {
+  font-weight: bold;
+}
+
+.wrapper-cart .checkout-information .bank .bank-item {
+  margin: 2vh 0;
+}
+
+.wrapper-cart .checkout-information .bank .bank-item h5 {
+  font-weight: bold;
+}
+
+.wrapper-cart .checkout-information .bank .bank-item p {
+  margin: 0 0 0 2.2vw;
+}
+
+.wrapper-history {
+  margin-top: 15vh;
+}
+/*# sourceMappingURL=main.css.map */

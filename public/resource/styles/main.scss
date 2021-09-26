@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+// fonts
+root{
+    --fonfam: 'Akaya Kanadaka', cursive;
+    --basecol: #b5374d;
+}
+// #FF9E53 :Orange
+// #b5374d :Maroon
+
+// Utilities
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.btn-my{
+    background-color: #b5374d;
+    color: #fff;
+    &:hover{
+        transform: scale(0.9);
+        color: white;
+    }
+}
+
+@media (max-width: 400px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    color: #b5374d;
+    scroll-behavior: smooth;
+}
+
+// Navbar
+.navbar-light {
+    .logo{
+        color: #b5374d;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 30px;
+        font-family: 'Akaya Kanadaka', cursive;
+    }
+    z-index: 99999;
+    background-color: white;
+    .navbar-nav {
+        .badge{
+            transform: scale(0.7);
+        }
+        .nav-link {
+            color: #a0809b;
+            &.active {
+                font-weight: bold;
+                color: var(--basecol) !important;
+            }
+            &:hover{
+                border-bottom: 1px solid #b5374d;
+            }
+            i{
+                border-radius: 50%;
+                font-size: 3vh;
+                &.active{
+                    color: var(--basecol);
+                }
+            }
+        }
+        .dropdown-user{
+            a{
+                color: gray;
+            }
+            .dropdown-menu{
+                background-color:whitesmoke;
+                padding: 0;
+                .dropdown-item{
+                    color: black;
+                    &:hover{
+                        background-color: gray;
+                        color: whitesmoke;
+                    }
+                }
+                
+            }
+        }
+        
+        
+        .dropdown-menu {
+            background-color: var(--basecol);
+            .dropdown-item {
+                color: white;
+                &:hover {
+                    background-color: var(--basecol);
+                }
+            }
+        }
+    }
+}
+
+// Endof navbar
+
+.breadcrumb{
+    background-color: white;
+    border-bottom-right-radius: 30px;
+    border-bottom: 1px solid gray;
+    li{
+        a{
+            text-decoration: none;
+            color: #b5374d;
+        }
+    }
+}
+
+footer {
+    background-color: white;
+}
+// Endof Utilities
+
+// Dashboard
+.wrapper-dashboard{
+    overflow-y: hidden;
+    height: 100vh;
+    background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.5),rgba(0,0,0,0)),url('../images/header2.jpg');
+    background-size: cover;
+    // header
+    header {
+        padding-top: 20vh;
+        backdrop-filter: blur(2px);
+        h1 {
+            font-family: var(--fonfam);
+            font-weight: bold;
+            letter-spacing: 10px;
+            font-size: 70px;
+            text-shadow: 3px 5px #fff !important;
+        }
+        .brand {
+            margin-top: 50px;
+            font-size: 50px;
+            color: var(--basecol);
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-shadow: 3px 5px #fff !important;
+        }
+        .title {
+            padding-top: 1vh;
+            font-size: 25px;
+            font-weight: 500;
+            color: var(--basecol);
+            text-shadow: 1px 1px #fff !important;
+        }
+        .btn-get-started {
+            margin-top: 50px;
+            background-color: transparent;
+            border-color: white;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 4px !important;
+            color: white;
+            font-weight: 500;
+            &:hover {
+                background-color: white;
+                color: var(--basecol);
+            }
+        }
+    }
+}
+// Endof dashboard
+
+
+// Index
+.wrapper-index {
+    margin-top: 13vh;
+    background-color: white;
+    .jumbotron{
+        background-image: linear-gradient(250deg,rgba(0, 0, 0, 1),rgba(0,0,0,0)),url('../images/header3.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+    .dog-food{
+        .card{
+            border-bottom-right-radius: 50px;
+            &:hover{
+                box-shadow: 0 10px 20px 10px rgba(0,0,0,0.2);
+            }
+        }
+        h1 {
+            font-family: 'Akaya Kanadaka', cursive;
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 1vh 0 0 0;
+        }
+        border-radius: 50px;
+        margin-top: -15vh;
+        padding-top: 2vh;
+        background-color: whitesmoke;
+    }
+    .cat-food{
+        .card{
+            border-bottom-right-radius: 50px;
+            &:hover{
+                box-shadow: 0 10px 20px 10px rgba(0,0,0,0.2);
+            }
+        }
+        h1 {
+            font-family: 'Akaya Kanadaka', cursive;
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 1vh 0 0 0;
+        }
+        border-radius: 50px;
+        margin-top: 5vh;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+        background-color: whitesmoke;
+    }
+}
+// Endof Index
+
+// product_details
+.wrapper-product_details{
+    margin-top: 14vh;
+    background-color: whitesmoke;
+    .card{
+        border-radius: 10px;
+        border-bottom: 1px solid gray;
+        .card-body{
+            height: 65vh;
+            overflow-y: scroll;
+        }
+        .carousel-control-prev-icon,.carousel-control-next-icon {
+            border-radius: 50%;
+            background-color: gray;
+        }
+    }
+}
+// Endof product_details
+
+// Cart
+.wrapper-cart{
+    margin-top: 15vh;
+    .checkout-information{
+        h2{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        p{
+            &.text-muted{
+                color: #b5374d !important;
+                font-size: 15px;
+            }
+        }
+        table{
+            tr{
+                th{
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+                td{
+                    font-weight: bold;
+                }
+            }
+        }
+        .bank{
+            .bank-item{
+                margin: 2vh 0;
+                h5{
+                    font-weight: bold;
+                }
+                p{
+                    margin: 0 0 0 2.2vw;
+                }
+            }
+        }
+    }
+
+}
+// Endof Cart
+
+// History
+.wrapper-history{
+    margin-top: 15vh;
+}
+// Endof History
