@@ -7,7 +7,6 @@ use App\Models\Transaction;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use PhpParser\Node\Stmt\Foreach_;
 
 class CartController extends Controller
 {
@@ -67,9 +66,13 @@ class CartController extends Controller
         
     }
     public function confirmOrder(Request $request, $id){
+        $validatedData = $request->validate([
+            'address' => 'required',
+            'total_price' =>'required'
+        ]);
         $order = Transaction::where('id',$id)->first();
-        $order->total_price = $request->total_price;
-        $order->address = $request->address;
+        $order->address = $validatedData['address'];
+        $order->total_price = $validatedData['total_price'];
         $order->status = 'PENDING';
         $order->update();
         return redirect('/product/');

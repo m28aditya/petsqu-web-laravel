@@ -46,9 +46,15 @@
                     @csrf
                     <h4 class="font-weight-bold">Alamat Pengiriman</h4>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="address"
+                        <input type="text" class="form-control @error('address') is-invalid @enderror" name="address"
                             placeholder="Masukkan Alamat Legkap Nama Jalan - Provinsi Tujuan" autofocus>
+                        @error('address')
+                        <div class="text-left invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
+
             </div>
             <div class="col-lg-4">
                 <div class="card px-3 py-2 checkout-information">
